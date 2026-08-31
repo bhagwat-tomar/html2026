@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article{
+            color:green;
+            background-color:rgb(128, 128, 25);
+        }
+        /*class selector*/
+        .first{
+            color:rgb(230, 82, 8);
+            background-color:rgb(195, 202, 202);
+        }
+        /*id selector*/
+        #second{
+            color:rgb(25, 33, 49);
+            background-color:rgb(145, 139, 149);
+        }
+        div p{
+            color:orange;
+        }
+        div.third{
+            background-color:aqua;
+        }
+        h6+p{
+            color:rgb(25, 33, 49);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:red;text-align: center;">About to Home Page</h1>
+    <p style="color:blue;background-color:rgb(128, 25, 25);">This is a simple paragraph.</p>
+    <article>this is an article</article>
+    <div class="first">this is content of first class</div>
+    <div id="second">
+        this is content of second id
+    </div>
+    <div>
+        <p>this is a paragraph inside a div element</p>
+    </div>
+    <div class="third">
+        this is content of third class
+    </div>
+    <div>
+        <p>this is second child of div with class third</p>
+    </div>
+    <h6>this is a heading element</h6>
+    <p>this is a paragraph below heading 6</p>
+    <p>this is a paragraph after two line of h6 tag</p>
+    <div>this is a div element</div>
+    <div ></div>
+</body>
+</html>    

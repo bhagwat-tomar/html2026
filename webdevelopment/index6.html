@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+    <style>
+        .container{
+            border:1px solid black;
+        }
+        img{
+            height:300px;
+            width:300px;    
+        }
+        .first{
+            position:static;
+            top: 20px;
+            left: 30px;
+        }
+        .second{
+            position:relative;
+            top: 20px;
+            left: 30px;
+        }
+        .third{
+            position:absolute;
+            top: 20px;
+            left: 30px;
+        }
+        .fourth{
+            position:fixed;
+            top: 20px;
+            left: 30px;
+        }
+        .fifth{
+            position:sticky;
+            top: 20px;
+            left: 30px;
+        }
+        .container2{
+            border:2px solid red;
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image.png" alt="image" class="first">
+        <img src="image1.png" alt="image" class="second">
+        <img src="image2.png" alt="image" class="third">
+        <img src="image3.png" alt="image" class="fourth">
+        <img src="image4.png" alt="image" class="fifth">
+    </div>
+    <div class="container2">
+        <p>this is a div element</p>
+    </div>  
+</body>
+</html>
