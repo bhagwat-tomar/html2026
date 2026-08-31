@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Ball Animation</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+        }
+
+        .container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: red;
+            animation: upDown 1s infinite ease-in-out;
+        }
+
+        .ball:nth-child(2) {
+            background: yellow;
+            animation-delay: 0.2s;
+        }
+
+        .ball:nth-child(3) {
+            background: blue;
+            animation-delay: 0.4s;
+        }
+
+        @keyframes upDown {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-90px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="ball"></div>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </div>
+
+</body>
+</html>
